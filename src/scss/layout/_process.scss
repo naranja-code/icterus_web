@@ -1,0 +1,50 @@
+// ==========================================
+// WORK PROCESS SECTION (METODOLOGÍA EN 4 PASOS)
+// ==========================================
+
+.process-section {
+  padding: 5.5rem 0;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+
+  .process-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: $border-radius-lg;
+    padding: 2.25rem 1.75rem;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      border-color: rgba(242, 114, 0, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(30, 34, 41, 0.06);
+
+      .step-number {
+        background: $brand-orange;
+        color: #ffffff;
+        border-color: $brand-orange;
+        transform: scale(1.08);
+      }
+    }
+
+    .process-heading {
+      font-family: $font-family-headline;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: $brand-charcoal;
+      margin-bottom: 0.75rem;
+    }
+
+    .process-text {
+      font-size: 0.88rem;
+      color: #64748b;
+      line-height: 1.55;
+      margin-bottom: 0;
+    }
+  }
+}

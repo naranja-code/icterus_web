@@ -1,0 +1,2705 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paginas Web Profesionales a la Medida | Impulsa tu Negocio</title>
+    <meta
+      name="description"
+      content="Creamos tu pagina web profesional a la medida para captar clientes y posiciona tu negocios en los bucasodres mas poulares hoy."
+    />
+
+    <!-- Fuentes Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    \
+
+    <!-- styles  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- <style>
+      :root {
+        /* Palette base on icterus branding logo */
+        --color-bg-dark: #030712;
+        --color-bg-darker: #020617;
+        --color-bg-card: rgba(15, 23, 42, 0.85);
+        --color-bg-card-alt: rgba(30, 41, 59, 0.6);
+        --color-border: rgba(51, 65, 85, 0.7);
+        --color-border-glow: rgba(249, 115, 22, 0.3);
+
+        /* Brand colors */
+        --color-brand-orange: #f97316;
+        --color-brand-orange-hover: #ea580c;
+        --color-brand-orange-light: rgba(249, 115, 22, 0.12);
+        --color-brand-orange-border: rgba(249, 115, 22, 0.25);
+
+        --color-brand-accent: #0891b2;
+        --color-brand-accent-hover: #0284c7;
+        --color-brand-accent-light: rgba(8, 145, 178, 0.12);
+
+        --color-brand-amber: #f59e0b;
+        --color-brand-amber-light: rgba(245, 158, 11, 0.12);
+
+        --color-rose: #f43f5e;
+        --color-rose-light: rgba(244, 63, 94, 0.12);
+
+        --color-emerald: #10b981;
+        --color-emerald-light: rgba(16, 185, 129, 0.12);
+
+        --color-purple: #a855f7;
+        --color-purple-light: rgba(168, 85, 247, 0.12);
+
+        /* Text colors */
+        --color-text-light: #f8fafc;
+        --color-text-muted: #cbd5e1;
+        --color-text-dim: #94a3b8;
+        --color-text-dark: #64748b;
+
+        /* Spacing and borders */
+        --font-family: "Inter", system-ui, -apple-system, sans-serif;
+        --radius-sm: 0.5rem;
+        --radius-md: 0.75rem;
+        --radius-lg: 1rem;
+        --radius-xl: 1.25rem;
+        --radius-full: 9999px;
+        --transition-fast: all 0.2s ease-in-out;
+        --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        --container-max-width: 80rem;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-family: var(--font-family);
+        background-color: var(--color-bg-dark);
+        color: var(--color-text-light);
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        background-color: var(--color-bg-dark);
+        overflow-x: hidden;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: inherit;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--container-max-width);
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+
+      .gradient-text {
+        background: linear-gradient(
+          135deg,
+          var(--color-brand-orange) 0%,
+          var(--color-brand-amber) 50%,
+          var(--color-brand-accent) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        transition: var(--transition-normal);
+        border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+        background-color: rgba(3, 7, 18, 0.8);
+        backdrop-filter: blur(12px);
+      }
+
+      .header--scrolled {
+        background-color: rgba(3, 7, 18, 0.95);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+        border-bottom-color: rgba(51, 65, 85, 0.8);
+      }
+
+      .header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5rem;
+      }
+
+      .header__brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .header__logo-img {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: contain;
+        filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.4));
+      }
+
+      .header__brand-title {
+        font-size: 1.5rem;
+        font-weight: 900;
+        letter-spacing: -0.025em;
+        text-transform: uppercase;
+        color: var(--color-text-light);
+      }
+
+      .header__brand-dot {
+        color: var(--color-brand-orange);
+      }
+
+      .header__nav {
+        display: none;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .header__nav-link {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--color-text-muted);
+        transition: var(--transition-fast);
+      }
+
+      .header__nav-link:hover {
+        color: var(--color-text-light);
+      }
+
+      .header__actions {
+        display: none;
+        align-items: center;
+      }
+
+      .header__mobile-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        border-radius: var(--radius-sm);
+        background: transparent;
+        border: none;
+        color: var(--color-text-dim);
+        cursor: pointer;
+        transition: var(--transition-fast);
+      }
+
+      .header__mobile-toggle:hover {
+        color: var(--color-text-light);
+        background-color: var(--color-bg-card-alt);
+      }
+
+      .mobile-menu {
+        display: none;
+        padding: 1rem 1.25rem 1.5rem 1.25rem;
+        background-color: rgba(3, 7, 18, 0.95);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--color-border);
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .mobile-menu--open {
+        display: flex;
+      }
+
+      .mobile-menu__link {
+        display: block;
+        padding: 0.75rem 1rem;
+        border-radius: var(--radius-sm);
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--color-text-muted);
+        transition: var(--transition-fast);
+      }
+
+      .mobile-menu__link:hover {
+        color: var(--color-text-light);
+        background-color: var(--color-bg-card-alt);
+      }
+
+      .mobile-menu__cta-wrapper {
+        padding-top: 0.5rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.875rem 1.75rem;
+        border-radius: var(--radius-md);
+        font-weight: 700;
+        font-size: 0.9375rem;
+        cursor: pointer;
+        transition: var(--transition-fast);
+        border: 1px solid transparent;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .btn:active {
+        transform: scale(0.97);
+      }
+
+      .btn--primary {
+        background: linear-gradient(
+          135deg,
+          var(--color-brand-orange) 0%,
+          var(--color-brand-accent) 100%
+        );
+        color: #ffffff;
+        box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.3);
+      }
+
+      .btn--primary:hover {
+        box-shadow: 0 15px 30px -5px rgba(249, 115, 22, 0.5);
+        transform: translateY(-2px);
+      }
+
+      .btn--secondary {
+        background-color: var(--color-bg-darker);
+        border-color: var(--color-border);
+        color: var(--color-text-muted);
+      }
+
+      .btn--secondary:hover {
+        background-color: var(--color-bg-card-alt);
+        color: var(--color-text-light);
+      }
+
+      .btn--full {
+        width: 100%;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.375rem 0.875rem;
+        border-radius: var(--radius-full);
+        font-size: 0.8125rem;
+        font-weight: 600;
+        width: fit-content;
+      }
+
+      .badge--orange {
+        background-color: var(--color-brand-orange-light);
+        border: 1px solid var(--color-brand-orange-border);
+        color: var(--color-brand-orange);
+      }
+
+      .badge--rose {
+        background-color: var(--color-rose-light);
+        border: 1px solid rgba(244, 63, 94, 0.25);
+        color: var(--color-rose);
+      }
+
+      .badge--cyan {
+        background-color: var(--color-brand-accent-light);
+        border: 1px solid rgba(8, 145, 178, 0.25);
+        color: var(--color-brand-accent);
+      }
+
+      .badge--emerald {
+        background-color: var(--color-emerald-light);
+        border: 1px solid rgba(16, 185, 129, 0.25);
+        color: var(--color-emerald);
+      }
+
+      .badge__dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: var(--radius-full);
+        background-color: currentColor;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.3;
+        }
+      }
+
+      .hero {
+        position: relative;
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+        overflow: hidden;
+        background: radial-gradient(
+          circle at 50% 20%,
+          rgba(249, 115, 22, 0.15) 0%,
+          rgba(3, 7, 18, 0) 70%
+        );
+      }
+
+      .hero__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        align-items: center;
+      }
+
+      .hero__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .hero__title {
+        font-size: 2.25rem;
+        font-weight: 800;
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+        color: var(--color-text-light);
+      }
+
+      .hero__description {
+        font-size: 1rem;
+        color: var(--color-text-muted);
+        line-height: 1.7;
+      }
+
+      .hero__points-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding-top: 0.5rem;
+      }
+
+      .hero__point-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.625rem;
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+      }
+
+      .hero__point-icon--red {
+        color: var(--color-rose);
+        shrink: 0;
+        margin-top: 0.125rem;
+      }
+      .hero__point-icon--orange {
+        color: var(--color-brand-orange);
+        shrink: 0;
+        margin-top: 0.125rem;
+      }
+
+      .hero__actions {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 0.75rem;
+      }
+
+      .hero__guarantees {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(51, 65, 85, 0.5);
+        font-size: 0.75rem;
+        color: var(--color-text-dim);
+      }
+
+      .hero__guarantee-item {
+        display: flex;
+        align-items: center;
+        gap: 0.375rem;
+      }
+
+      .hero__guarantee-icon {
+        color: var(--color-brand-orange);
+        width: 1rem;
+        height: 1rem;
+      }
+
+      .hero__visual {
+        position: relative;
+      }
+
+      .mockup-card {
+        position: relative;
+        border-radius: var(--radius-xl);
+        border: 1px solid var(--color-border);
+        background-color: rgba(15, 23, 42, 0.9);
+        padding: 1.5rem;
+        box-shadow:
+          0 25px 50px -12px rgba(0, 0, 0, 0.5),
+          0 0 50px -12px rgba(249, 115, 22, 0.2);
+        backdrop-filter: blur(16px);
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      .mockup-card__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--color-border);
+        padding-bottom: 1rem;
+      }
+
+      .mockup-card__dots {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .mockup-card__dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: var(--radius-full);
+      }
+
+      .mockup-card__dot--red {
+        background-color: rgba(244, 63, 94, 0.8);
+      }
+      .mockup-card__dot--yellow {
+        background-color: rgba(245, 158, 11, 0.8);
+      }
+      .mockup-card__dot--green {
+        background-color: rgba(16, 185, 129, 0.8);
+      }
+
+      .mockup-card__filename {
+        font-family: monospace;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--color-brand-orange);
+      }
+
+      .mockup-card__metrics {
+        display: flex;
+        flex-direction: column;
+        gap: 0.875rem;
+      }
+
+      .metric-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(3, 7, 18, 0.6);
+        padding: 0.75rem;
+        border-radius: var(--radius-md);
+        border: 1px solid rgba(51, 65, 85, 0.5);
+      }
+
+      .metric-row__info {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .metric-row__icon-box {
+        padding: 0.5rem;
+        border-radius: var(--radius-sm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .metric-row__icon-box--orange {
+        background-color: var(--color-brand-orange-light);
+        color: var(--color-brand-orange);
+      }
+      .metric-row__icon-box--amber {
+        background-color: var(--color-brand-amber-light);
+        color: var(--color-brand-amber);
+      }
+      .metric-row__icon-box--cyan {
+        background-color: var(--color-brand-accent-light);
+        color: var(--color-brand-accent);
+      }
+
+      .metric-row__label {
+        font-size: 0.75rem;
+        color: var(--color-text-dim);
+      }
+
+      .metric-row__value {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+      }
+
+      .metric-row__tag {
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.25rem 0.5rem;
+        border-radius: var(--radius-sm);
+      }
+
+      .metric-row__tag--orange {
+        background-color: var(--color-brand-orange-light);
+        color: var(--color-brand-orange);
+      }
+      .metric-row__tag--amber {
+        background-color: var(--color-brand-amber-light);
+        color: var(--color-brand-amber);
+      }
+      .metric-row__tag--cyan {
+        background-color: var(--color-brand-accent-light);
+        color: var(--color-brand-accent);
+      }
+
+      .mockup-card__banner {
+        background: linear-gradient(
+          135deg,
+          rgba(124, 45, 18, 0.3) 0%,
+          rgba(15, 23, 42, 0.8) 100%
+        );
+        padding: 1rem;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--color-brand-orange-border);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.75rem;
+        color: var(--color-text-muted);
+      }
+
+      .section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        border-top: 1px solid rgba(51, 65, 85, 0.6);
+        position: relative;
+      }
+
+      .section--alt {
+        background-color: rgba(15, 23, 42, 0.4);
+      }
+
+      .section-header {
+        text-align: center;
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .section-header__title {
+        font-size: 2rem;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        color: var(--color-text-light);
+      }
+
+      .section-header__description {
+        font-size: 1rem;
+        color: var(--color-text-dim);
+        line-height: 1.6;
+      }
+
+      .problems__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .problem-card {
+        background-color: rgba(2, 6, 23, 0.8);
+        border: 1px solid var(--color-border);
+        padding: 1.5rem;
+        border-radius: var(--radius-xl);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: var(--transition-normal);
+      }
+
+      .problem-card:hover {
+        border-color: rgba(244, 63, 94, 0.4);
+        transform: translateY(-3px);
+      }
+
+      .problem-card__main {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .problem-card__icon-wrapper {
+        width: 3rem;
+        height: 3rem;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .problem-card__icon-wrapper--red {
+        background-color: var(--color-rose-light);
+        border: 1px solid rgba(244, 63, 94, 0.2);
+        color: var(--color-rose);
+      }
+      .problem-card__icon-wrapper--amber {
+        background-color: var(--color-brand-amber-light);
+        border: 1px solid rgba(245, 158, 11, 0.2);
+        color: var(--color-brand-amber);
+      }
+      .problem-card__icon-wrapper--orange {
+        background-color: var(--color-brand-orange-light);
+        border: 1px solid var(--color-brand-orange-border);
+        color: var(--color-brand-orange);
+      }
+      .problem-card__icon-wrapper--purple {
+        background-color: var(--color-purple-light);
+        border: 1px solid rgba(168, 85, 247, 0.2);
+        color: var(--color-purple);
+      }
+
+      .problem-card__title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+      }
+
+      .problem-card__description {
+        font-size: 0.875rem;
+        color: var(--color-text-dim);
+        line-height: 1.6;
+      }
+
+      .problem-card__footer {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(51, 65, 85, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+
+      .problem-card__footer-tag {
+        padding: 0.25rem 0.625rem;
+        border-radius: var(--radius-sm);
+      }
+
+      .banner-alert {
+        margin-top: 3rem;
+        background-color: rgba(2, 6, 23, 0.9);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-xl);
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+      }
+
+      .banner-alert__info {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .banner-alert__icon {
+        padding: 0.75rem;
+        border-radius: var(--radius-md);
+        background-color: var(--color-rose-light);
+        color: var(--color-rose);
+        shrink: 0;
+      }
+
+      .banner-alert__title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+      }
+
+      .banner-alert__text {
+        font-size: 0.875rem;
+        color: var(--color-text-dim);
+        margin-top: 0.25rem;
+      }
+
+      .solution__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .solution-card {
+        background-color: rgba(15, 23, 42, 0.8);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-xl);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        transition: var(--transition-normal);
+      }
+
+      .solution-card:hover {
+        border-color: rgba(249, 115, 22, 0.5);
+      }
+
+      .solution-card--featured {
+        border-color: rgba(249, 115, 22, 0.5);
+        box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.1);
+      }
+
+      .solution-card__badge-top {
+        position: absolute;
+        top: -0.875rem;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.25rem 1rem;
+        border-radius: var(--radius-full);
+        background: linear-gradient(
+          90deg,
+          var(--color-brand-orange) 0%,
+          var(--color-brand-amber) 100%
+        );
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .solution-card__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      .solution-card__icon-box {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .solution-card__icon-box--orange {
+        background: linear-gradient(
+          135deg,
+          var(--color-brand-orange-light) 0%,
+          var(--color-brand-amber-light) 100%
+        );
+        border: 1px solid var(--color-brand-orange-border);
+        color: var(--color-brand-orange);
+      }
+      .solution-card__icon-box--amber {
+        background: linear-gradient(
+          135deg,
+          var(--color-brand-amber-light) 0%,
+          var(--color-brand-orange-light) 100%
+        );
+        border: 1px solid rgba(245, 158, 11, 0.3);
+        color: var(--color-brand-amber);
+      }
+      .solution-card__icon-box--cyan {
+        background: linear-gradient(
+          135deg,
+          var(--color-brand-accent-light) 0%,
+          var(--color-brand-orange-light) 100%
+        );
+        border: 1px solid rgba(8, 145, 178, 0.3);
+        color: var(--color-brand-accent);
+      }
+
+      .solution-card__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+      }
+
+      .solution-card__description {
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+        line-height: 1.6;
+      }
+
+      .solution-card__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid rgba(51, 65, 85, 0.6);
+        font-size: 0.75rem;
+        color: var(--color-text-dim);
+      }
+
+      .solution-card__list-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .solution-card__check-icon {
+        color: var(--color-brand-orange);
+        width: 1rem;
+        height: 1rem;
+        shrink: 0;
+      }
+
+      .stats-bar {
+        margin-top: 3rem;
+        background-color: #0f172a;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-xl);
+        padding: 1.5rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+      }
+
+      .stats-bar__item-val {
+        font-size: 1.875rem;
+        font-weight: 800;
+        color: var(--color-text-light);
+      }
+
+      .stats-bar__item-val--orange {
+        color: var(--color-brand-orange);
+      }
+      .stats-bar__item-val--cyan {
+        color: var(--color-brand-accent);
+      }
+      .stats-bar__item-val--emerald {
+        color: var(--color-emerald);
+      }
+
+      .stats-bar__item-lbl {
+        font-size: 0.75rem;
+        color: var(--color-text-dim);
+        margin-top: 0.25rem;
+      }
+
+      .benefits__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .benefit-card {
+        background-color: rgba(2, 6, 23, 0.8);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-xl);
+        padding: 1.5rem;
+        transition: var(--transition-normal);
+      }
+
+      .benefit-card:hover {
+        border-color: rgba(249, 115, 22, 0.4);
+      }
+
+      .benefit-card__icon-box {
+        width: 3rem;
+        height: 3rem;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+      }
+
+      .benefit-card__title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+        margin-bottom: 0.5rem;
+      }
+
+      .benefit-card__description {
+        font-size: 0.875rem;
+        color: var(--color-text-dim);
+        line-height: 1.6;
+      }
+
+      .comparison-wrapper {
+        margin-top: 4rem;
+        background-color: rgba(2, 6, 23, 1);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-xl);
+        padding: 1.5rem;
+        overflow-x: auto;
+      }
+
+      .comparison-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 0.875rem;
+        min-width: 600px;
+      }
+
+      .comparison-table th {
+        padding: 1rem 1.5rem;
+        background-color: #0f172a;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-text-muted);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .comparison-table td {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+        color: var(--color-text-dim);
+      }
+
+      .comparison-table tr:hover td {
+        background-color: rgba(15, 23, 42, 0.4);
+      }
+
+      .comparison-table__attr {
+        font-weight: 600;
+        color: var(--color-text-light);
+      }
+
+      .comparison-table__bad {
+        color: var(--color-rose);
+      }
+      .comparison-table__good {
+        color: var(--color-emerald);
+        font-weight: 700;
+      }
+
+      .process__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .process-card {
+        background-color: rgba(15, 23, 42, 0.8);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-xl);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: var(--transition-normal);
+      }
+
+      .process-card:hover {
+        border-color: rgba(249, 115, 22, 0.5);
+      }
+
+      .process-card__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+
+      .process-card__number {
+        font-size: 1.875rem;
+        font-weight: 900;
+        font-family: monospace;
+        color: rgba(249, 115, 22, 0.4);
+      }
+
+      .process-card__icon-wrapper {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .process-card__title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+        margin-bottom: 0.5rem;
+      }
+
+      .process-card__description {
+        font-size: 0.75rem;
+        color: var(--color-text-dim);
+        line-height: 1.6;
+      }
+
+      .process-card__footer {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(51, 65, 85, 0.6);
+        font-size: 0.6875rem;
+        color: var(--color-text-dark);
+      }
+
+      .process-banner {
+        margin-top: 3rem;
+        background: linear-gradient(
+          135deg,
+          rgba(15, 23, 42, 0.9) 0%,
+          rgba(124, 45, 18, 0.3) 50%,
+          rgba(15, 23, 42, 0.9) 100%
+        );
+        border: 1px solid var(--color-brand-orange-border);
+        border-radius: var(--radius-xl);
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+      }
+
+      .process-banner__title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+      }
+
+      .process-banner__sub {
+        font-size: 0.75rem;
+        color: var(--color-text-dim);
+        margin-top: 0.25rem;
+      }
+
+      .contact__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        align-items: center;
+      }
+
+      .contact__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .contact__title {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1.2;
+        color: var(--color-text-light);
+      }
+
+      .contact__description {
+        font-size: 1rem;
+        color: var(--color-text-muted);
+        line-height: 1.7;
+      }
+
+      .contact__features {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 0.5rem;
+      }
+
+      .contact-feature {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+
+      .contact-feature__icon {
+        padding: 0.5rem;
+        border-radius: var(--radius-sm);
+        shrink: 0;
+        margin-top: 0.125rem;
+      }
+
+      .contact-feature__title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+      }
+
+      .contact-feature__text {
+        font-size: 0.75rem;
+        color: var(--color-text-dim);
+        margin-top: 0.125rem;
+      }
+
+      .contact__guarantee-bar {
+        padding-top: 1rem;
+        border-top: 1px solid var(--color-border);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.75rem;
+        color: var(--color-text-dim);
+      }
+
+      .contact__form-card {
+        background-color: var(--color-bg-darker);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-xl);
+        padding: 2rem;
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .form__group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .form__grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .form__label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .form__input,
+      .form__select {
+        width: 100%;
+        background-color: #0f172a;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+        color: var(--color-text-light);
+        outline: none;
+        transition: var(--transition-fast);
+      }
+
+      .form__input:focus,
+      .form__select:focus {
+        border-color: var(--color-brand-orange);
+        box-shadow: 0 0 0 1px var(--color-brand-orange);
+      }
+
+      .form__disclaimer {
+        font-size: 0.6875rem;
+        color: var(--color-text-dark);
+        text-align: center;
+      }
+
+      .success-box {
+        padding: 2rem 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .success-box--hidden {
+        display: none;
+      }
+
+      .success-box__icon-wrapper {
+        width: 4rem;
+        height: 4rem;
+        border-radius: var(--radius-full);
+        background-color: var(--color-brand-orange-light);
+        border: 1px solid var(--color-brand-orange-border);
+        color: var(--color-brand-orange);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .success-box__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+      }
+
+      .success-box__text {
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+        max-width: 24rem;
+      }
+
+      .footer {
+        background-color: var(--color-bg-darker);
+        border-top: 1px solid var(--color-border);
+        color: var(--color-text-dim);
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+      }
+
+      .footer__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid rgba(51, 65, 85, 0.6);
+      }
+
+      .footer__brand-col {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .footer__text {
+        font-size: 0.75rem;
+        line-height: 1.6;
+        max-width: 22rem;
+      }
+
+      .footer__socials {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding-top: 0.5rem;
+      }
+
+      .footer__social-btn {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: var(--radius-sm);
+        background-color: #0f172a;
+        border: 1px solid var(--color-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-text-dim);
+        transition: var(--transition-fast);
+      }
+
+      .footer__social-btn:hover {
+        color: var(--color-text-light);
+        background-color: rgba(30, 41, 59, 0.8);
+      }
+
+      .footer__col-title {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 1rem;
+      }
+
+      .footer__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        font-size: 0.75rem;
+      }
+
+      .footer__list-link {
+        transition: var(--transition-fast);
+      }
+
+      .footer__list-link:hover {
+        color: var(--color-text-light);
+      }
+
+      .footer__contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .footer__contact-icon {
+        color: var(--color-brand-orange);
+        width: 1rem;
+        height: 1rem;
+        shrink: 0;
+      }
+
+      .footer__bottom {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 0.75rem;
+        color: var(--color-text-dark);
+      }
+
+      .footer__legal-links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      @media (min-width: 640px) {
+        .hero__points-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .hero__actions {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .problems__grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .form__grid-2 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .process-banner {
+          flex-direction: row;
+          justify-content: space-between;
+          text-align: left;
+        }
+
+        .footer__bottom {
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .header__nav {
+          display: flex;
+        }
+
+        .header__actions {
+          display: flex;
+        }
+
+        .header__mobile-toggle {
+          display: none;
+        }
+
+        .hero__title {
+          font-size: 3rem;
+        }
+
+        .banner-alert {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .stats-bar {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .process__grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .benefits__grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer__grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .hero__grid {
+          grid-template-columns: 7fr 5fr;
+        }
+
+        .solution__grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .benefits__grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .process__grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .contact__grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .footer__grid {
+          grid-template-columns: 2fr 1fr 1fr 1fr;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <header id="main-header" class="header">
+      <div class="container">
+        <div class="header__inner">
+          <!-- Logo icterus -->
+          <div class="header__brand">
+            <img
+              src="img/logo_icterus-Photoroom.png"
+              alt="Icterus Logo"
+              class="header__logo-img"
+            />
+            <span class="header__brand-title">
+              icterus<span class="header__brand-dot">.</span>
+            </span>
+          </div>
+
+          <!-- Navegación Principal -->
+          <nav class="header__nav">
+            <a href="#problema" class="header__nav-link">Problemas Comunes</a>
+            <a href="#solucion" class="header__nav-link">Solución Técnica</a>
+            <a href="#beneficios" class="header__nav-link">Beneficios</a>
+            <a href="#proceso" class="header__nav-link">Proceso</a>
+          </nav>
+
+          <!-- Botón de Acción Principal -->
+          <div class="header__actions">
+            <a href="#contacto" class="btn btn--primary">
+              Diagnóstico Gratuito
+            </a>
+          </div>
+
+          <!-- Botón Menú Móvil -->
+          <button
+            id="mobile-menu-btn"
+            type="button"
+            class="header__mobile-toggle"
+            aria-label="Abrir menú"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú Desplegable Móvil -->
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#problema" class="mobile-menu__link">Problemas Comunes</a>
+        <a href="#solucion" class="mobile-menu__link">Solución Técnica</a>
+        <a href="#beneficios" class="mobile-menu__link">Beneficios</a>
+        <a href="#proceso" class="mobile-menu__link">Proceso</a>
+        <div class="mobile-menu__cta-wrapper">
+          <a href="#contacto" class="btn btn--primary btn--full">
+            Diagnóstico Gratuito
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <!-- Columna Izquierda: Mensaje principal y puntos clave -->
+          <div class="hero__content">
+            <div class="badge badge--orange">
+              <span class="badge__dot"></span>
+              icterus | Desarrollo Web Estratégico de Alta Conversión
+            </div>
+
+            <h1 class="hero__title">
+              ¿Tu negocio es invisible en Internet?
+              <span class="gradient-text">Creamos tu pagina web</span> para
+              convertir visitas en ventas reales.
+            </h1>
+
+            <p class="hero__description">
+              Un sitio web lento o desactualizado genera inseguridad en los
+              usuarios. Cada día sin una presencia digital optimizada representa
+              clientes que eligen a la competencia y presupuesto perdido en
+              publicidad. En
+              <strong style="color: var(--color-text-light)">icterus</strong>
+              <strong style="color: var(--color-text-light)"
+                >creamos tu pagina web Profesional a la medida</strong
+              >
+              y desarrollamos una
+              <strong style="color: var(--color-text-light)"
+                >landing page para convertir</strong
+              >
+              tráfico en ingresos constantes. Además,
+              <strong style="color: var(--color-text-light)"
+                >posiciona tu negocios en los buscadores mas poulares</strong
+              >
+              mediante arquitectura SEO avanzada para asegurar tu dominancia
+              digital.
+            </p>
+
+            <div class="hero__points-grid">
+              <div class="hero__point-item">
+                <i data-lucide="x-circle" class="hero__point-icon--red"></i>
+                <span>Pérdida continua de clientes potenciales</span>
+              </div>
+              <div class="hero__point-item">
+                <i data-lucide="x-circle" class="hero__point-icon--red"></i>
+                <span>Baja velocidad de carga y alto abandono</span>
+              </div>
+              <div class="hero__point-item">
+                <i
+                  data-lucide="check-circle-2"
+                  class="hero__point-icon--orange"
+                ></i>
+                <span>Diseño UX/UI enfocado en ventas</span>
+              </div>
+              <div class="hero__point-item">
+                <i
+                  data-lucide="check-circle-2"
+                  class="hero__point-icon--orange"
+                ></i>
+                <span>Optimización para motores de búsqueda</span>
+              </div>
+            </div>
+
+            <div class="hero__actions">
+              <a href="#contacto" class="btn btn--primary">
+                <span>Solicitar Diagnóstico Digital Gratuito</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+              <a href="#proceso" class="btn btn--secondary">
+                <i data-lucide="play"></i>
+                <span>Ver Proceso de Trabajo</span>
+              </a>
+            </div>
+
+            <div class="hero__guarantees">
+              <div class="hero__guarantee-item">
+                <i data-lucide="shield-check" class="hero__guarantee-icon"></i>
+                <span>Garantía de Velocidad</span>
+              </div>
+              <div class="hero__guarantee-item">
+                <i data-lucide="code" class="hero__guarantee-icon"></i>
+                <span>Código 100% Optimizado</span>
+              </div>
+              <div class="hero__guarantee-item">
+                <i data-lucide="zap" class="hero__guarantee-icon"></i>
+                <span>Carga Menor a 1.5s</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Tarjeta Visual Mockup -->
+          <div class="hero__visual">
+            <div class="mockup-card">
+              <div class="mockup-card__header">
+                <div class="mockup-card__dots">
+                  <span class="mockup-card__dot mockup-card__dot--red"></span>
+                  <span
+                    class="mockup-card__dot mockup-card__dot--yellow"
+                  ></span>
+                  <span class="mockup-card__dot mockup-card__dot--green"></span>
+                </div>
+                <span class="mockup-card__filename">icterus-analytics.log</span>
+              </div>
+
+              <div class="mockup-card__metrics">
+                <div class="metric-row">
+                  <div class="metric-row__info">
+                    <div
+                      class="metric-row__icon-box metric-row__icon-box--orange"
+                    >
+                      <i data-lucide="gauge"></i>
+                    </div>
+                    <div>
+                      <div class="metric-row__label">Google PageSpeed</div>
+                      <div class="metric-row__value">99 / 100 Puntos</div>
+                    </div>
+                  </div>
+                  <span class="metric-row__tag metric-row__tag--orange"
+                    >Excelente</span
+                  >
+                </div>
+
+                <div class="metric-row">
+                  <div class="metric-row__info">
+                    <div
+                      class="metric-row__icon-box metric-row__icon-box--amber"
+                    >
+                      <i data-lucide="trending-up"></i>
+                    </div>
+                    <div>
+                      <div class="metric-row__label">Tasa de Conversión</div>
+                      <div class="metric-row__value">+340% Incremento</div>
+                    </div>
+                  </div>
+                  <span class="metric-row__tag metric-row__tag--amber"
+                    >Optimizado</span
+                  >
+                </div>
+
+                <div class="metric-row">
+                  <div class="metric-row__info">
+                    <div
+                      class="metric-row__icon-box metric-row__icon-box--cyan"
+                    >
+                      <i data-lucide="search"></i>
+                    </div>
+                    <div>
+                      <div class="metric-row__label">
+                        Posicionamiento Orgánico
+                      </div>
+                      <div class="metric-row__value">Top 3 Resultados</div>
+                    </div>
+                  </div>
+                  <span class="metric-row__tag metric-row__tag--cyan"
+                    >Indexado</span
+                  >
+                </div>
+              </div>
+
+              <div class="mockup-card__banner">
+                <img
+                  src="1785772979231.png"
+                  alt="Icterus"
+                  style="width: 1.5rem; height: 1.5rem; object-fit: contain"
+                />
+                <span
+                  ><strong>icterus</strong>: Especialistas en la creación de
+                  <strong>paginas web</strong> de alto rendimiento.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problema" class="section section--alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge--rose">
+            <i data-lucide="alert-triangle"></i>
+            Diagnóstico de Vulnerabilidades Digitales
+          </div>
+          <h2 class="section-header__title">
+            Los 4 Errores Críticos que Frenan las Ventas de tu Negocio
+          </h2>
+          <p class="section-header__description">
+            La falta de infraestructura técnica y un diseño genérico no solo
+            degradan la imagen corporativa, sino que generan una fuga constante
+            de ingresos y oportunidades de adquisición.
+          </p>
+        </div>
+
+        <div class="problems__grid">
+          <div class="problem-card">
+            <div class="problem-card__main">
+              <div
+                class="problem-card__icon-wrapper problem-card__icon-wrapper--red"
+              >
+                <i data-lucide="clock"></i>
+              </div>
+              <h3 class="problem-card__title">
+                Lentitud Operativa y Abandono Masivo
+              </h3>
+              <p class="problem-card__description">
+                Más del 53% de las visitas abandonan un sitio si tarda más de 3
+                segundos en cargar. La lentitud penaliza tu presupuesto
+                publicitario y destruye la tasa de conversión.
+              </p>
+            </div>
+            <div class="problem-card__footer">
+              <span>Pérdida de Tráfico:</span>
+              <span class="badge badge--rose">Hasta 70%</span>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-card__main">
+              <div
+                class="problem-card__icon-wrapper problem-card__icon-wrapper--amber"
+              >
+                <i data-lucide="eye-off"></i>
+              </div>
+              <h3 class="problem-card__title">Invisibilidad en Buscadores</h3>
+              <p class="problem-card__description">
+                Sin arquitectura semántica ni SEO técnico, tus prospectos no te
+                encontrarán cuando busquen activamente tus productos o servicios
+                en la web.
+              </p>
+            </div>
+            <div class="problem-card__footer">
+              <span>Tráfico Orgánico:</span>
+              <span class="badge badge--orange">Nulo / Deficiente</span>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-card__main">
+              <div
+                class="problem-card__icon-wrapper problem-card__icon-wrapper--orange"
+              >
+                <i data-lucide="smartphone-off"></i>
+              </div>
+              <h3 class="problem-card__title">Mala Experiencia Móvil (UX)</h3>
+              <p class="problem-card__description">
+                El 80% de las consultas provienen de dispositivos móviles.
+                Interfaces rotas, botones diminutos y diseños descuidados
+                destruyen la confianza del cliente.
+              </p>
+            </div>
+            <div class="problem-card__footer">
+              <span>Fricción de Usuario:</span>
+              <span class="badge badge--orange">Muy Alta</span>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-card__main">
+              <div
+                class="problem-card__icon-wrapper problem-card__icon-wrapper--purple"
+              >
+                <i data-lucide="trending-down"></i>
+              </div>
+              <h3 class="problem-card__title">Sin Estrategia de Conversión</h3>
+              <p class="problem-card__description">
+                Tener una página informativa sin un flujo de captura ni llamadas
+                a la acción estratégicas equivale a tener un local comercial sin
+                vendedores.
+              </p>
+            </div>
+            <div class="problem-card__footer">
+              <span>Retorno de Inversión:</span>
+              <span class="badge badge--rose">Negativo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner-alert">
+          <div class="banner-alert__info">
+            <div class="banner-alert__icon">
+              <i data-lucide="shield-alert"></i>
+            </div>
+            <div>
+              <h4 class="banner-alert__title">
+                El Costo de la Inacción Digital
+              </h4>
+              <p class="banner-alert__text">
+                Cada día con una plataforma ineficiente representa oportunidades
+                capturadas por competidores con mejor infraestructura
+                tecnológica. La actualización técnica es una urgencia comercial.
+              </p>
+            </div>
+          </div>
+          <a href="#solucion" class="btn btn--secondary">
+            <span>Ver Solución Técnica</span>
+            <i data-lucide="arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucion" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge--orange">
+            <i data-lucide="cpu"></i>
+            Arquitectura de Alto Rendimiento y Conversión
+          </div>
+          <h2 class="section-header__title">
+            La Solución Técnica: Ingeniería Web Diseñada para Escalar
+          </h2>
+          <p class="section-header__description">
+            Transformamos los puntos de fricción digital en una ventaja
+            competitiva. Cuando
+            <strong style="color: var(--color-text-muted)"
+              >creamos tu pagina web</strong
+            >, combinamos estándares avanzados de desarrollo con estrategias
+            comprobadas de captación de clientes.
+          </p>
+        </div>
+
+        <div class="solution__grid">
+          <div class="solution-card">
+            <div class="solution-card__content">
+              <div
+                class="solution-card__icon-box solution-card__icon-box--orange"
+              >
+                <i data-lucide="code-2"></i>
+              </div>
+              <h3 class="solution-card__title">Desarrollo Web Personalizado</h3>
+              <p class="solution-card__description">
+                En
+                <strong style="color: var(--color-text-light)">icterus</strong>
+                <strong style="color: var(--color-text-light)"
+                  >creamo tu pagina web porofesional a la medida</strong
+                >
+                sin plantillas sobrecargadas ni código innecesario.
+                Implementamos arquitectura limpia enfocada en tiempos de carga
+                ultra rápidos e interacciones fluidas.
+              </p>
+              <ul class="solution-card__list">
+                <li class="solution-card__list-item">
+                  <i data-lucide="check" class="solution-card__check-icon"></i>
+                  <span>Código HTML5 / CSS3 / JavaScript puro</span>
+                </li>
+                <li class="solution-card__list-item">
+                  <i data-lucide="check" class="solution-card__check-icon"></i>
+                  <span>Carga en menos de 1.5 segundos</span>
+                </li>
+                <li class="solution-card__list-item">
+                  <i data-lucide="check" class="solution-card__check-icon"></i>
+                  <span>Core Web Vitals optimizados al 100%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="solution-card solution-card--featured">
+            <div class="solution-card__badge-top">Máximo Retorno (ROI)</div>
+            <div class="solution-card__content">
+              <div
+                class="solution-card__icon-box solution-card__icon-box--amber"
+              >
+                <i data-lucide="target"></i>
+              </div>
+              <h3 class="solution-card__title">
+                Diseño Orientado a Conversiones
+              </h3>
+              <p class="solution-card__description">
+                Diseñamos cada
+                <strong style="color: var(--color-text-light)"
+                  >landing page para convertir</strong
+                >
+                con estructuras persuasivas de UX/UI, llamadas a la acción
+                estratificadas y formularios optimizados para eliminar cualquier
+                tipo de fricción en la compra.
+              </p>
+              <ul class="solution-card__list">
+                <li class="solution-card__list-item">
+                  <i data-lucide="check" class="solution-card__check-icon"></i>
+                  <span>Formularios inteligentes y CTAs visibles</span>
+                </li>
+                <li class="solution-card__list-item">
+                  <i data-lucide="check" class="solution-card__check-icon"></i>
+                  <span>Adaptación táctil responsive total</span>
+                </li>
+                <li class="solution-card__list-item">
+                  <i data-lucide="check" class="solution-card__check-icon"></i>
+                  <span>Integración con CRM y analítica</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-card__content">
+              <div
+                class="solution-card__icon-box solution-card__icon-box--cyan"
+              >
+                <i data-lucide="search-check"></i>
+              </div>
+              <h3 class="solution-card__title">Posicionamiento SEO Técnico</h3>
+              <p class="solution-card__description">
+                Construimos la base necesaria para que
+                <strong style="color: var(--color-text-light)"
+                  >posiciona tu negocios en los bucasodres mas poulares</strong
+                >
+                como Google, implementando schema de datos estructurados,
+                optimización semántica y sitemaps.
+              </p>
+              <ul class="solution-card__list">
+                <li class="solution-card__list-item">
+                  <i data-lucide="check" class="solution-card__check-icon"></i>
+                  <span>Marcado JSON-LD y Open Graph</span>
+                </li>
+                <li class="solution-card__list-item">
+                  <i data-lucide="check" class="solution-card__check-icon"></i>
+                  <span>Indexación acelerada en buscadores</span>
+                </li>
+                <li class="solution-card__list-item">
+                  <i data-lucide="check" class="solution-card__check-icon"></i>
+                  <span>Arquitectura SEO On-Page avanzada</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-bar">
+          <div>
+            <div class="stats-bar__item-val">99/100</div>
+            <div class="stats-bar__item-lbl">Score Google PageSpeed</div>
+          </div>
+          <div>
+            <div class="stats-bar__item-val stats-bar__item-val--orange">
+              &lt; 1.2s
+            </div>
+            <div class="stats-bar__item-lbl">Tiempo de Carga Promedio</div>
+          </div>
+          <div>
+            <div class="stats-bar__item-val stats-bar__item-val--cyan">
+              100%
+            </div>
+            <div class="stats-bar__item-lbl">
+              Adaptabilidad Móvil (Responsive)
+            </div>
+          </div>
+          <div>
+            <div class="stats-bar__item-val stats-bar__item-val--emerald">
+              SSL / TLS
+            </div>
+            <div class="stats-bar__item-lbl">Encriptación de Seguridad</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section section--alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge--emerald">
+            <i data-lucide="trending-up"></i>
+            Impacto Comercial Medible
+          </div>
+          <h2 class="section-header__title">
+            Beneficios Tangibles: La Ventaja Competitiva de una Infraestructura
+            Digital Moderna
+          </h2>
+          <p class="section-header__description">
+            La implementación estratégica de
+            <strong>paginas web</strong> avanzadas no es un gasto operativo,
+            sino el activo comercial con mayor rendimiento de retorno para tu
+            negocio.
+          </p>
+        </div>
+
+        <div class="benefits__grid">
+          <div class="benefit-card">
+            <div class="benefit-card__icon-box badge--orange">
+              <i data-lucide="user-check"></i>
+            </div>
+            <h3 class="benefit-card__title">Captación Automatizada 24/7</h3>
+            <p class="benefit-card__description">
+              Implementamos una
+              <strong>landing page para convertir</strong> prospectos
+              calificados las 24 horas del día, integrando embudos sin fricción
+              para capturar datos de contacto directamente a tu CRM.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon-box badge--cyan">
+              <i data-lucide="search"></i>
+            </div>
+            <h3 class="benefit-card__title">
+              Dominio Orgánico en Motores de Búsqueda
+            </h3>
+            <p class="benefit-card__description">
+              Desarrollamos arquitectura con estándares que
+              <strong
+                >posiciona tu negocios en los bucasodres mas poulares</strong
+              >, canalizando intenciones de compra orgánicas de forma sostenida
+              y recurrente.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon-box badge--emerald">
+              <i data-lucide="zap"></i>
+            </div>
+            <h3 class="benefit-card__title">
+              Máxima Retención y Carga Inmediata
+            </h3>
+            <p class="benefit-card__description">
+              Tiempos de respuesta sub-segundo que erradican la tasa de abandono
+              y garantizan una navegación fluida que mantiene la atención del
+              usuario enfocada en la propuesta de valor.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon-box badge--rose">
+              <i data-lucide="award"></i>
+            </div>
+            <h3 class="benefit-card__title">Autoridad e Imagen Profesional</h3>
+            <p class="benefit-card__description">
+              Como especialistas,
+              <strong>creamo tu pagina web porofesional a la medida</strong>
+              reflejando la solidez de tu empresa, proyectando confianza
+              inmediata y elevando el valor percibido de tu oferta.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon-box badge--orange">
+              <i data-lucide="dollar-sign"></i>
+            </div>
+            <h3 class="benefit-card__title">
+              Mayor Retorno en Pauta Publicitaria
+            </h3>
+            <p class="benefit-card__description">
+              Al dirigir campañas de Google Ads o Meta Ads a plataformas de alto
+              rendimiento, reducimos el costo por adquisición (CPA) y
+              multiplicamos el retorno de inversión (ROAS).
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon-box badge--cyan">
+              <i data-lucide="layers"></i>
+            </div>
+            <h3 class="benefit-card__title">
+              Arquitectura Escalable sin Bloqueos
+            </h3>
+            <p class="benefit-card__description">
+              Sistemas diseñados con código limpio que permiten integrar
+              pasarelas de pago, bases de datos o funcionalidades a la medida
+              según el crecimiento del negocio.
+            </p>
+          </div>
+        </div>
+
+        <div class="comparison-wrapper">
+          <h3 class="comparison-title">Comparativa de Rendimiento Digital</h3>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Métrica / Atributo</th>
+                <th class="comparison-table__bad">
+                  Sitio Genérico / Plantilla
+                </th>
+                <th class="comparison-table__good">
+                  Desarrollo Profesional a la Medida
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="comparison-table__attr">Velocidad de Carga</td>
+                <td class="comparison-table__bad">
+                  3.5s - 6.0s (Abandono elevado)
+                </td>
+                <td class="comparison-table__good">
+                  &lt; 1.5s (Carga instantánea)
+                </td>
+              </tr>
+              <tr>
+                <td class="comparison-table__attr">
+                  Tasa de Conversión Promedio
+                </td>
+                <td class="comparison-table__bad">0.5% - 1.2%</td>
+                <td class="comparison-table__good">3.8% - 7.5%+</td>
+              </tr>
+              <tr>
+                <td class="comparison-table__attr">
+                  SEO y Estructura Semántica
+                </td>
+                <td class="comparison-table__bad">
+                  Deficiente / Errores de indexación
+                </td>
+                <td class="comparison-table__good">
+                  Optimización SEO On-Page total
+                </td>
+              </tr>
+              <tr>
+                <td class="comparison-table__attr">
+                  Experiencia Móvil (Responsive)
+                </td>
+                <td class="comparison-table__bad">
+                  Inconsistente o con errores táctiles
+                </td>
+                <td class="comparison-table__good">
+                  Adaptación táctil fluida 100%
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge--orange">
+            <i data-lucide="git-merge"></i>
+            Metodología de Desarrollo Ágil
+          </div>
+          <h2 class="section-header__title">
+            Proceso de Trabajo: De la Estrategia a la Captación de Clientes
+          </h2>
+          <p class="section-header__description">
+            Ejecutamos un flujo secuencial estandarizado para garantizar que
+            cuando
+            <strong style="color: var(--color-text-muted)"
+              >creamos tu pagina web</strong
+            >, cada fase técnica responda directamente a tus objetivos
+            comerciales.
+          </p>
+        </div>
+
+        <div class="process__grid">
+          <div class="process-card">
+            <div>
+              <div class="process-card__top">
+                <span class="process-card__number">01</span>
+                <div class="process-card__icon-wrapper badge--orange">
+                  <i data-lucide="clipboard-check"></i>
+                </div>
+              </div>
+              <h3 class="process-card__title">Auditoría y Estrategia</h3>
+              <p class="process-card__description">
+                Analizamos los puntos de dolor de tu negocio, tu audiencia y la
+                competencia para estructurar la arquitectura técnica ideal.
+              </p>
+            </div>
+            <div class="process-card__footer">
+              Entregable: Roadmap de Conversión
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div>
+              <div class="process-card__top">
+                <span class="process-card__number">02</span>
+                <div class="process-card__icon-wrapper badge--cyan">
+                  <i data-lucide="code"></i>
+                </div>
+              </div>
+              <h3 class="process-card__title">Desarrollo Frontend & UX</h3>
+              <p class="process-card__description">
+                Donde
+                <strong style="color: var(--color-text-muted)"
+                  >creamo tu pagina web porofesional a la medida</strong
+                >
+                con código semántico optimizado, interfaz fluida y adaptabilidad
+                móvil sin fisuras.
+              </p>
+            </div>
+            <div class="process-card__footer">
+              Entregable: Maqueta Funcional
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div>
+              <div class="process-card__top">
+                <span class="process-card__number">03</span>
+                <div class="process-card__icon-wrapper badge--emerald">
+                  <i data-lucide="sliders"></i>
+                </div>
+              </div>
+              <h3 class="process-card__title">SEO & Embudos de Venta</h3>
+              <p class="process-card__description">
+                Configuración de <strong>landing page para convertir</strong>,
+                marcado estructurado schema.org y auditoría de carga
+                sub-segundo.
+              </p>
+            </div>
+            <div class="process-card__footer">
+              Entregable: Pruebas PageSpeed (95+)
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div>
+              <div class="process-card__top">
+                <span class="process-card__number">04</span>
+                <div class="process-card__icon-wrapper badge--rose">
+                  <i data-lucide="rocket"></i>
+                </div>
+              </div>
+              <h3 class="process-card__title">Despliegue e Indexación</h3>
+              <p class="process-card__description">
+                Publicación en servidores optimizados y envío de sitemaps para
+                que
+                <strong
+                  >posiciona tu negocios en los bucasodres mas poulares</strong
+                >.
+              </p>
+            </div>
+            <div class="process-card__footer">
+              Entregable: Plataforma Activa 24/7
+            </div>
+          </div>
+        </div>
+
+        <div class="process-banner">
+          <div>
+            <h4 class="process-banner__title">
+              ¿Listo para iniciar el proceso de transformación digital?
+            </h4>
+            <p class="process-banner__sub">
+              El tiempo promedio de implementación es de 7 a 14 días laborables
+              según la complejidad del proyecto.
+            </p>
+          </div>
+          <a href="#contacto" class="btn btn--primary">
+            <span>Iniciar Diagnóstico Gratuito</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section--alt">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <div class="badge badge--orange">
+              <i data-lucide="sparkles"></i>
+              Evaluación Técnica Sin Costo
+            </div>
+
+            <h2 class="contact__title">
+              Solicita tu Diagnóstico Digital Gratuito y Descubre cómo Escalar
+              tu Negocio
+            </h2>
+
+            <p class="contact__description">
+              Analizamos la infraestructura técnica actual de tu presencia
+              digital. Evaluamos tiempos de carga, arquitectura SEO y la
+              eficiencia de tus llamadas a la acción para que entiendas
+              exactamente cómo una
+              <strong style="color: var(--color-text-light)"
+                >landing page para convertir</strong
+              >
+              y la optimización correcta
+              <strong style="color: var(--color-text-light)"
+                >posiciona tu negocios en los bucasodres mas poulares</strong
+              >.
+            </p>
+
+            <div class="contact__features">
+              <div class="contact-feature">
+                <div class="contact-feature__icon badge--orange">
+                  <i data-lucide="gauge"></i>
+                </div>
+                <div>
+                  <h4 class="contact-feature__title">
+                    Auditoría de Rendimiento PageSpeed
+                  </h4>
+                  <p class="contact-feature__text">
+                    Identificamos cuellos de botella que provocan que los
+                    visitantes abandonen tu sitio antes de comprar.
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-feature">
+                <div class="contact-feature__icon badge--cyan">
+                  <i data-lucide="search-check"></i>
+                </div>
+                <div>
+                  <h4 class="contact-feature__title">
+                    Revisión de Posicionamiento SEO
+                  </h4>
+                  <p class="contact-feature__text">
+                    Analizamos la indexación semántica para verificar la
+                    visibilidad frente a tus competidores.
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-feature">
+                <div class="contact-feature__icon badge--emerald">
+                  <i data-lucide="target"></i>
+                </div>
+                <div>
+                  <h4 class="contact-feature__title">
+                    Plan Estratégico de Conversión
+                  </h4>
+                  <p class="contact-feature__text">
+                    Recomendaciones directas sobre cómo cuando
+                    <strong style="color: var(--color-text-muted)"
+                      >creamos tu pagina web</strong
+                    >
+                    optimizamos la captura de prospectos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__guarantee-bar">
+              <div style="display: flex; align-items: center; gap: 0.375rem">
+                <i data-lucide="lock" style="color: var(--color-emerald)"></i>
+                <span>100% Confidencial</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.375rem">
+                <i
+                  data-lucide="clock"
+                  style="color: var(--color-brand-orange)"
+                ></i>
+                <span>Respuesta en 24h</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.375rem">
+                <i
+                  data-lucide="check-circle"
+                  style="color: var(--color-brand-accent)"
+                ></i>
+                <span>Sin Compromiso Comercial</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form-card">
+            <div id="form-container">
+              <div style="margin-bottom: 1.5rem">
+                <h3 style="font-size: 1.5rem; font-weight: 700">
+                  Iniciar Diagnóstico Gratuito
+                </h3>
+                <p
+                  style="
+                    font-size: 0.875rem;
+                    color: var(--color-text-dim);
+                    margin-top: 0.25rem;
+                  "
+                >
+                  Completa el formulario para que un especialista en desarrollo
+                  web analice tu caso.
+                </p>
+              </div>
+
+              <form
+                id="diagnostic-form"
+                class="form"
+                onsubmit="handleFormSubmit(event)"
+              >
+                <div class="form__group">
+                  <label for="fullname" class="form__label"
+                    >Nombre Completo *</label
+                  >
+                  <input
+                    type="text"
+                    id="fullname"
+                    required
+                    placeholder="Ej. Carlos Mendoza"
+                    class="form__input"
+                  />
+                </div>
+
+                <div class="form__grid-2">
+                  <div class="form__group">
+                    <label for="email" class="form__label"
+                      >Correo Corporativo *</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      required
+                      placeholder="carlos@tuempresa.com"
+                      class="form__input"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label for="phone" class="form__label"
+                      >Teléfono / WhatsApp *</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      required
+                      placeholder="+52 55 1234 5678"
+                      class="form__input"
+                    />
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label for="website" class="form__label"
+                    >Sitio Web Actual (Opcional)</label
+                  >
+                  <input
+                    type="url"
+                    id="website"
+                    placeholder="https://tuempresa.com (Déjalo en blanco si aún no tienes)"
+                    class="form__input"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label for="objective" class="form__label"
+                    >¿Cuál es tu objetivo principal?</label
+                  >
+                  <select id="objective" class="form__select">
+                    <option value="nuevo">
+                      Necesito un nuevo sitio web profesional a la medida
+                    </option>
+                    <option value="conversion">
+                      Quiero una landing page para convertir más clientes
+                    </option>
+                    <option value="velocidad">
+                      Mi sitio actual es muy lento y no vende
+                    </option>
+                    <option value="seo">
+                      Quiero posicionar mi negocio en los buscadores
+                    </option>
+                  </select>
+                </div>
+
+                <div style="padding-top: 0.5rem">
+                  <button
+                    type="submit"
+                    id="submit-btn"
+                    class="btn btn--primary btn--full"
+                  >
+                    <i data-lucide="send"></i>
+                    <span>Solicitar Diagnóstico Gratuito Ahora</span>
+                  </button>
+                </div>
+
+                <p class="form__disclaimer">
+                  Nos tomamos en serio tu privacidad. Tus datos no serán
+                  compartidos con terceros.
+                </p>
+              </form>
+            </div>
+
+            <div id="success-message" class="success-box success-box--hidden">
+              <div class="success-box__icon-wrapper">
+                <i
+                  data-lucide="check-circle-2"
+                  style="width: 2rem; height: 2rem"
+                ></i>
+              </div>
+              <h4 class="success-box__title">¡Solicitud Recibida con Éxito!</h4>
+              <p class="success-box__text">
+                Hemos registrado la información de tu proyecto. El equipo de
+                <strong>icterus</strong> revisará tus métricas y te contactará
+                en menos de 24 horas laborables.
+              </p>
+              <button onclick="resetForm()" class="btn btn--secondary">
+                <i data-lucide="refresh-cw"></i>
+                <span>Enviar otra consulta</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand-col">
+            <div class="header__brand">
+              <img
+                src="img/logo_icterus-Photoroom.png"
+                alt="Icterus Logo"
+                class="header__logo-img"
+              />
+              <span class="header__brand-title">
+                icterus<span class="header__brand-dot">.</span>
+              </span>
+            </div>
+            <p class="footer__text">
+              En <strong>icterus</strong> somos especialistas en la creación de
+              <strong>paginas web</strong> y
+              <strong>landing page para convertir</strong>. Desarrollamos
+              infraestructura digital donde
+              <strong>creamo tu pagina web porofesional a la medida</strong> y
+              <strong
+                >posiciona tu negocios en los bucasodres mas poulares</strong
+              >.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-btn" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="#" class="footer__social-btn" aria-label="Twitter">
+                <i data-lucide="twitter"></i>
+              </a>
+              <a href="#" class="footer__social-btn" aria-label="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="footer__col-title">Navegación</h5>
+            <ul class="footer__list">
+              <li>
+                <a href="#problema" class="footer__list-link"
+                  >Diagnóstico de Errores</a
+                >
+              </li>
+              <li>
+                <a href="#solucion" class="footer__list-link"
+                  >Solución Técnica</a
+                >
+              </li>
+              <li>
+                <a href="#beneficios" class="footer__list-link"
+                  >Beneficios Comerciales</a
+                >
+              </li>
+              <li>
+                <a href="#proceso" class="footer__list-link"
+                  >Proceso de Trabajo</a
+                >
+              </li>
+              <li>
+                <a href="#contacto" class="footer__list-link"
+                  >Diagnóstico Gratuito</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="footer__col-title">Servicios</h5>
+            <ul class="footer__list">
+              <li>
+                <span class="footer__list-link" style="cursor: pointer"
+                  >Desarrollo Web Personalizado</span
+                >
+              </li>
+              <li>
+                <span class="footer__list-link" style="cursor: pointer"
+                  >Landing Pages de Conversión</span
+                >
+              </li>
+              <li>
+                <span class="footer__list-link" style="cursor: pointer"
+                  >Optimización SEO On-Page</span
+                >
+              </li>
+              <li>
+                <span class="footer__list-link" style="cursor: pointer"
+                  >Auditoría de Tiempos de Carga</span
+                >
+              </li>
+              <li>
+                <span class="footer__list-link" style="cursor: pointer"
+                  >Integración de Embudos CRM</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="footer__col-title">Soporte Técnico</h5>
+            <ul class="footer__list">
+              <li class="footer__contact-item">
+                <i data-lucide="mail" class="footer__contact-icon"></i>
+                <span>contacto@icterus.pro</span>
+              </li>
+              <li class="footer__contact-item">
+                <i data-lucide="phone" class="footer__contact-icon"></i>
+                <span>+52 (55) 8000-0000</span>
+              </li>
+              <li class="footer__contact-item">
+                <i data-lucide="map-pin" class="footer__contact-icon"></i>
+                <span>Ciudad de México, México</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>&copy; 2026 icterus. Todos los derechos reservados.</p>
+          <div class="footer__legal-links">
+            <a href="#" class="footer__list-link">Política de Privacidad</a>
+            <a href="#" class="footer__list-link">Términos del Servicio</a>
+            <a href="#" class="footer__list-link">Aviso Legal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script>
+      // Inicialización de iconos Lucide
+      lucide.createIcons();
+
+      // Control del Menú Móvil
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("mobile-menu--open");
+      });
+
+      // Cambio de estilo del Header al hacer Scroll
+      const header = document.getElementById("main-header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 20) {
+          header.classList.add("header--scrolled");
+        } else {
+          header.classList.remove("header--scrolled");
+        }
+      });
+
+      // Manejo del Formulario de Diagnóstico Gratuito
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        const formContainer = document.getElementById("form-container");
+        const successMsg = document.getElementById("success-message");
+        const submitBtn = document.getElementById("submit-btn");
+
+        // Simular estado de carga
+        submitBtn.disabled = true;
+        submitBtn.innerHTML =
+          '<i data-lucide="loader-2"></i><span>Procesando solicitud...</span>';
+        lucide.createIcons();
+
+        setTimeout(() => {
+          formContainer.style.display = "none";
+          successMsg.classList.remove("success-box--hidden");
+          lucide.createIcons();
+        }, 1200);
+      }
+
+      function resetForm() {
+        const formContainer = document.getElementById("form-container");
+        const form = document.getElementById("diagnostic-form");
+        const successMsg = document.getElementById("success-message");
+        const submitBtn = document.getElementById("submit-btn");
+
+        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML =
+          '<i data-lucide="send"></i><span>Solicitar Diagnóstico Gratuito Ahora</span>';
+
+        successMsg.classList.add("success-box--hidden");
+        formContainer.style.display = "block";
+        lucide.createIcons();
+      }
+    </script> -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

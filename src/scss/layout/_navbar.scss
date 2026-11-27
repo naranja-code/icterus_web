@@ -1,0 +1,129 @@
+// ==========================================
+// STICKY NAVBAR WITH BRANDING (LIGHT CLEAN STYLE)
+// ==========================================
+
+.header-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1040;
+  background-color: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  padding: 0.65rem 0;
+
+  &--scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border-bottom-color: rgba(242, 114, 0, 0.25);
+    padding: 0.45rem 0;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+
+    .brand-logo-img {
+      content: url('../../img/logo_imagen_original2-Photoroom.png');
+      height: 46px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(242, 114, 0, 0.25));
+      transition: transform 0.3s ease;
+    }
+
+    &:hover .brand-logo-img {
+      content: url('../../img/imagen_hover2-Photoroom.png');
+      // transform: translateX(10px) rotate(10deg) translateY(5px) // otra idea animacion 
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+
+      .brand-title {
+        font-family: $font-family-headline;
+        font-size: 1.4rem;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $brand-charcoal;
+        line-height: 1.1;
+
+        .brand-dot {
+          color: $brand-orange;
+        }
+      }
+
+      .brand-subtitle {
+        font-family: $font-family-code;
+        font-size: 0.65rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: $brand-gray-muted;
+      }
+    }
+  }
+
+  .nav-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #475569 !important;
+    padding: 0.5rem 0.85rem !important;
+    transition: all 0.2s ease;
+    border-radius: $border-radius-sm;
+
+    &:hover,
+    &:focus {
+      color: $brand-orange !important;
+      background: rgba(242, 114, 0, 0.06);
+    }
+  }
+
+  .navbar-cta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .navbar-toggler {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    color: $brand-charcoal;
+    padding: 0.4rem 0.65rem;
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(242, 114, 0, 0.3);
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      background: #ffffff;
+      padding: 1rem 1.25rem 1.5rem 1.25rem;
+      border-radius: $border-radius;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      margin-top: 0.75rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+      .nav-link {
+        padding: 0.75rem 0.5rem !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar-cta {
+        margin-top: 1rem;
+        flex-direction: column;
+        width: 100%;
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

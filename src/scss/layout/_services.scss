@@ -1,0 +1,132 @@
+// ==========================================
+// SPECIALIZED SERVICES SECTION
+// ==========================================
+
+.services-section {
+  padding: 5rem 0;
+  background-color: $brand-gray-light;
+  position: relative;
+
+  .section-tag {
+    font-family: $font-family-code;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $brand-orange;
+    letter-spacing: 0.1em;
+  }
+
+  .section-title {
+    font-family: $font-family-headline;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: $brand-charcoal;
+    margin-top: 0.35rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-card {
+    background: #ffffff;
+    border-radius: $border-radius-lg;
+    padding: 2.25rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(30, 34, 41, 0.08);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+
+    .service-icon-wrapper {
+      width: 58px;
+      height: 58px;
+      border-radius: $border-radius-sm;
+      background: $brand-orange-light;
+      color: $brand-orange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    &:hover .service-icon-wrapper {
+      background: $brand-orange;
+      color: #ffffff;
+      transform: scale(1.1) rotate(-3deg);
+    }
+
+    .service-heading {
+      font-family: $font-family-headline;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: $brand-charcoal;
+      margin-bottom: 0.85rem;
+    }
+
+    .service-text {
+      color: #475569;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-features-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+
+      li {
+        font-size: 0.875rem;
+        color: #334155;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        i, .bullet-check {
+          color: $brand-orange;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: auto;
+
+      .service-tag-pill {
+        font-family: $font-family-code;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.65rem;
+        background: #f1f5f9;
+        color: #334155;
+        border-radius: 4px;
+        font-weight: 600;
+      }
+    }
+
+    // Roadmap badge for future services
+    &--roadmap {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border: 2px dashed rgba(242, 114, 0, 0.4);
+
+      .roadmap-indicator {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+        background: #e0f2fe;
+        color: #0369a1;
+        font-family: $font-family-code;
+        font-size: 0.72rem;
+        font-weight: 700;
+        padding: 0.25rem 0.75rem;
+        border-radius: 50rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

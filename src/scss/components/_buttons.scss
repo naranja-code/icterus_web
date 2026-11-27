@@ -1,0 +1,169 @@
+// ==========================================
+// BUTTONS & CTA STYLES
+// ==========================================
+
+.btn {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding: 0.75rem 1.5rem;
+  border-radius: $border-radius-sm;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, $brand-orange 0%, #e06800 100%);
+  border: 1px solid $brand-orange;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(242, 114, 0, 0.35);
+
+  &:hover, &:focus {
+    background: linear-gradient(135deg, #ff7e14 0%, $brand-orange 100%);
+    border-color: #ff7e14;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(242, 114, 0, 0.5);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-dark {
+  background-color: $brand-charcoal;
+  border-color: $brand-charcoal;
+  color: #ffffff;
+
+  &:hover, &:focus {
+    background-color: #12151a;
+    border-color: #12151a;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+}
+
+.btn-outline-primary {
+  border: 2px solid $brand-orange;
+  color: $brand-orange;
+  background: transparent;
+
+  &:hover, &:focus {
+    background-color: $brand-orange;
+    border-color: $brand-orange;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(242, 114, 0, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+// Emergency CTA with subtle pulse
+.btn-emergency {
+  background: linear-gradient(135deg, $brand-orange 0%, #d83a15 100%);
+  border: none;
+  color: #ffffff !important;
+  font-weight: 800;
+  box-shadow: 0 4px 20px rgba(242, 114, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: rgba(255, 255, 255, 0.25);
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(242, 114, 0, 0.6);
+
+    &::before {
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: 1;
+    }
+  }
+}
+
+// Floating WhatsApp Lead Capture Button
+.btn-whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  // right: 24px;
+  left: 24px;
+  z-index: 1050;
+  display: flex;
+  align-items: start;
+  gap: 0.65rem;
+  background: linear-gradient(135deg, $whatsapp-green 0%, $whatsapp-green-dark 100%);
+  color: #ffffff !important;
+  padding: 0.85rem 1.4rem;
+  border-radius: 50rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  .whatsapp-icon {
+    font-size: 1.35rem;
+    line-height: 1;
+  }
+
+  .whatsapp-pulse-ring {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px solid $whatsapp-green;
+    border-radius: 50rem;
+    animation: wa-pulse 2s infinite cubic-bezier(0.25, 0, 0, 1);
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: scale(1.06) translateY(-3px);
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.6);
+    color: #ffffff;
+  }
+
+  @media (max-width: 576px) {
+    bottom: 16px;
+    left: 16px;
+    padding: 0.75rem 1.15rem;
+    font-size: 0.875rem;
+
+    .whatsapp-text {
+      display: inline-block;
+    }
+  }
+}
+
+@keyframes wa-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}

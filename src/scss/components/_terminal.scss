@@ -1,0 +1,132 @@
+// ==========================================
+// TECH STATUS TERMINAL & TELEMETRY
+// ==========================================
+
+.terminal-box {
+  background: $brand-charcoal;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  font-family: $font-family-code;
+
+  &__header {
+    background: #171a20;
+    padding: 0.65rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    .dots {
+      display: flex;
+      gap: 6px;
+
+      span {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .dot-red { background: #ef4444; }
+      .dot-yellow { background: #f59e0b; }
+      .dot-green { background: #10b981; }
+    }
+
+    .terminal-title {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  &__body {
+    padding: 1.25rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    background: #1a1e24;
+    min-height: 280px;
+
+    .prompt-row {
+      margin-bottom: 0.5rem;
+
+      .prompt-arrow {
+        color: $brand-orange;
+        font-weight: bold;
+        margin-right: 6px;
+      }
+      .prompt-path {
+        color: #38bdf8;
+        margin-right: 6px;
+      }
+      .prompt-cmd {
+        color: #f8fafc;
+        font-weight: 600;
+      }
+    }
+
+    .output-row {
+      margin-left: 1rem;
+      margin-bottom: 0.75rem;
+      color: #cbd5e1;
+
+      &.highlight {
+        color: #34d399;
+        font-weight: 600;
+      }
+
+      .grid-status {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.35rem 1rem;
+        margin-top: 0.35rem;
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 0.8rem;
+        }
+
+        .check-ok {
+          color: #34d399;
+        }
+      }
+    }
+  }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.1em;
+  background-color: $brand-orange;
+  animation: cursor-blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+@keyframes cursor-blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.active-dot {
+  width: 9px;
+  height: 9px;
+  background: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.8);
+  animation: active-pulse 2s infinite;
+}
+
+@keyframes active-pulse {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}

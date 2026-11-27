@@ -1,0 +1,75 @@
+// ==========================================
+// LEAD GENERATION FORM - LIGHT CLEAN STYLE
+// ==========================================
+
+.form-section {
+  padding: 5.5rem 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e2229;
+  position: relative;
+  border-top: 1px solid #e2e8f0;
+
+  .form-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: $border-radius-xl;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 15px 40px rgba(30, 34, 41, 0.08);
+
+    @media (max-width: 576px) {
+      padding: 2rem 1.25rem;
+    }
+
+    .form-label {
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: #334155;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-control, .form-select {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      color: #1e2229;
+      padding: 0.75rem 1rem;
+      border-radius: $border-radius-sm;
+      font-size: 0.95rem;
+      transition: all 0.25s ease;
+
+      &::placeholder {
+        color: #94a3b8;
+      }
+
+      &:focus {
+        background: #ffffff;
+        border-color: $brand-orange;
+        box-shadow: 0 0 0 3px rgba(242, 114, 0, 0.2);
+        color: #1e2229;
+      }
+    }
+
+    .form-select option {
+      background: #ffffff;
+      color: #1e2229;
+    }
+  }
+
+  .success-feedback-box {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-radius: $border-radius;
+    padding: 2rem;
+    text-align: center;
+    display: none;
+
+    &.show {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

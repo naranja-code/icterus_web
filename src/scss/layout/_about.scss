@@ -1,0 +1,94 @@
+// ==========================================
+// ABOUT THE SPECIALIST (JOSÉ RODRÍGUEZ)
+// ==========================================
+
+.about-specialist {
+  padding: 5rem 0;
+  background-color: #ffffff;
+  position: relative;
+
+  .specialist-photo-wrapper {
+    position: relative;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(30, 34, 41, 0.12);
+    border: 3px solid #ffffff;
+    max-width: 460px;
+    margin: 0 auto;
+
+    .photo-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: center center;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover .photo-img {
+      transform: scale(1.03);
+    }
+
+    .photo-bottom-card {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(30, 34, 41, 0) 0%,
+        rgba(30, 34, 41, 0.95) 45%,
+        #1e2229 100%
+      );
+      padding: 2rem 1.5rem 1.25rem 1.5rem;
+      color: #ffffff;
+
+      .specialist-title {
+        font-family: $font-family-headline;
+        font-weight: 800;
+        font-size: 1.35rem;
+        margin-bottom: 0.2rem;
+      }
+
+      .specialist-creds {
+        font-family: $font-family-code;
+        color: $brand-orange;
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+
+    .credential-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: $border-radius-sm;
+      padding: 1rem;
+
+      .cred-icon {
+        color: $brand-orange;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .cred-title {
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: $brand-charcoal;
+        margin-bottom: 0.2rem;
+      }
+
+      .cred-desc {
+        font-size: 0.8rem;
+        color: #64748b;
+        margin-bottom: 0;
+        line-height: 1.4;
+      }
+    }
+  }
+}

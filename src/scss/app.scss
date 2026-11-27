@@ -1,0 +1,64 @@
+// ==========================================
+// ICTERUS MASTER SCSS ENTRY POINT
+// ==========================================
+
+// 1. Variables & Overrides
+@import "base/variables";
+
+// 2. Bootstrap Core Framework
+@import "bootstrap/scss/bootstrap";
+
+// 3. Modular Components
+@import "components/cards";
+@import "components/terminal";
+@import "components/buttons";
+@import "components/badges";
+
+// 4. Section Layouts (Estilo Claro & Limpio)
+@import "layout/navbar";
+@import "layout/hero";
+@import "layout/trust-bar";
+@import "layout/about";
+@import "layout/services";
+@import "layout/sectors";
+@import "layout/process";
+@import "layout/plans";
+@import "layout/coverage";
+@import "layout/faq";
+@import "layout/form";
+@import "layout/footer";
+
+// 5. Global Animations & Utilities
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  
+  color: #1e2229;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-headline {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+code, pre, .font-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.reveal-section {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
