@@ -45,6 +45,11 @@ export function copyImages() {
     .pipe(plumber())
     .pipe(dest("dist/img"));
 }
+// Copiar Archivos Seo 
+function copySeoFiles() {
+  return src(['src/robots.txt', 'src/sitemap.xml'], { allowEmpty: true })
+    .pipe(dest('dist'));
+}
 
 // 3. Watcher de desarrollo
 export function watchFiles() {
@@ -55,6 +60,6 @@ export function watchFiles() {
 }
 
 // Tareas exportadas
-export const build = parallel(compileCss, compileJs, copyHtml, copyImages);
+export const build = parallel(compileCss, compileJs, copyHtml, copyImages, copySeoFiles);
 export const dev = series(build, watchFiles);
 export default dev;
