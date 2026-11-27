@@ -32,14 +32,29 @@ export function compileJs(done) {
     .pipe(dest("dist/js"));
   done();
 }
+// Copiar archivos HTML a dist
+export function copyHtml() {
+  return src("*.html") // o "src/*.html" si los tienes dentro de src
+    .pipe(plumber())
+    .pipe(dest("dist"));
+}
+
+// Copiar carpeta de imágenes a dist
+export function copyImages() {
+  return src("img/**/*", { allowEmpty: true, encoding: false })
+    .pipe(plumber())
+    .pipe(dest("dist/img"));
+}
 
 // 3. Watcher de desarrollo
 export function watchFiles() {
   watch("src/scss/**/*.scss", compileCss);
   watch("src/js/**/*.js", compileJs);
+  watch("*.html", copyHtml);
+  watch("src/img/**/*", copyImages);
 }
 
 // Tareas exportadas
-export const build = parallel(compileCss, compileJs);
+export const build = parallel(compileCss, compileJs, copyHtml, copyImages);
 export const dev = series(build, watchFiles);
 export default dev;
